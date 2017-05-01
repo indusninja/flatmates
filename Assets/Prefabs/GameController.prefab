@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400008}
+  - 114: {fileID: 11400006}
+  - 114: {fileID: 11400004}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a082458dd268cb40a273ef4efb6f569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemManager: {fileID: 11400002}
+  PlayerPrefab: {fileID: 100004, guid: d448caba286f5624dab91710700502f2, type: 2}
+  useNetwork: 1
+  PlayerIdleClips:
+  - {fileID: 7400000, guid: db94f41aca29b7d439f59fbe95719002, type: 2}
+  - {fileID: 7400000, guid: 6ad49feb28232f64ebb6a391cbd1ac44, type: 2}
+  - {fileID: 7400000, guid: 81289cb5852d2c34fbda29972455c14f, type: 2}
+  - {fileID: 7400000, guid: 4b777c67ac298b04dbd54162a9f8c5c8, type: 2}
+  PlayerColors:
+  - {r: .580392182, g: .686274529, b: .701960802, a: 0}
+  - {r: .760784328, g: .466666669, b: .513725519, a: 0}
+  - {r: .552941203, g: .760784328, b: .65882355, a: 0}
+  - {r: .760784328, g: .749019623, b: .552941203, a: 0}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb3426caba67954a99d90ef59813f84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AvailableItemSpawnLocations: []
+  ItemTemplates:
+  - {fileID: 100002, guid: 0de38229825ac204fb093ff2f2e22c4c, type: 2}
+  - {fileID: 100002, guid: 2bb4378831137bf428a61e9191414e7a, type: 2}
+  - {fileID: 100002, guid: 4bb3a007967c8a449a15f3382a99b0ab, type: 2}
+  - {fileID: 100002, guid: 55da8d9cd7b0f9241af6e02e8e86ab77, type: 2}
+  - {fileID: 100002, guid: 7f766744d25945b4a9d6626801d95e72, type: 2}
+  - {fileID: 100002, guid: 8e5185d32ac841c4aa0b082317f0d08d, type: 2}
+  - {fileID: 100002, guid: 903d7dcb9d370614db009dc5865c32a1, type: 2}
+  - {fileID: 100002, guid: 9cefb337b6575844cb322408c198e154, type: 2}
+  - {fileID: 100002, guid: cccd18c3547e5e1498b5f117d6f7abf3, type: 2}
+  - {fileID: 100002, guid: ff18b7380c29181408d0ddcc253d972f, type: 2}
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subId: 0
+  ownerId: 0
+  group: 0
+  prefixBackup: -1
+  observed: {fileID: 0}
+  synchronization: 0
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  instantiationId: 0
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7df05633e7fba74eb67ed206a8f803b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameStateManager: {fileID: 11400000}
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1b84a427010e0469ce0df07ab64dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AutoConnect: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
